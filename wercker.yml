@@ -12,4 +12,5 @@ deploy:
     - lukevivier/gh-pages@0.2.1:
         token: $GIT_TOKEN
         basedir: public
+        branch: master
         repo: lego1x5/lego1x5.github.io
