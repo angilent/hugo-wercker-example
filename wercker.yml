@@ -5,3 +5,11 @@ build:
         version: "0.25.1"
         theme: herring-cove
         flags: --buildDrafts=true
+deploy:
+  steps:
+    - install-packages:
+        packages: git ssh-client
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        basedir: public
+        repo： https://github.com/lego1x5/lego1x5.github.com.git
